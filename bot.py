@@ -4,7 +4,8 @@ import os
 import shutil
 
 # توکن رباتت رو اینجا بذار
-TOKEN = '7504614995:AAFxxxxxxxxxxxxxxxxxxxxxxxxxxx'  # عوض کن!
+import os
+TOKEN = os.getenv('BOT_TOKEN')
 
 bot = telebot.TeleBot(TOKEN)
 
